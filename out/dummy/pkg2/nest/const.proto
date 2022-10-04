@@ -1,0 +1,17 @@
+syntax = "proto3";
+package dummy.pkg2.nest;
+option go_package = "code.justin.tv/safety/gateway/testserver/rpc/testserver/gen/dummy.pkg2.nest";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/duration.proto";
+
+enum Food {
+     Borgir = 0;
+     Pitza = 1;
+}
+
+enum Country {
+     Canada = 0;
+}
+

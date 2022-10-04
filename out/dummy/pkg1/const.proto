@@ -1,0 +1,24 @@
+syntax = "proto3";
+package dummy.pkg1;
+option go_package = "code.justin.tv/safety/gateway/testserver/rpc/testserver/gen/dummy.pkg1";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/duration.proto";
+
+import "dummy/pkg3/const.proto";
+import "meta/const.proto";
+
+message A {
+    string Message = 1;
+    bool Flag = 2;
+    optional string Alt = 3;
+}
+
+message C {
+    dummy.pkg3.B Value = 1;
+}
+
+message Q {
+    meta.FF F = 1;
+}

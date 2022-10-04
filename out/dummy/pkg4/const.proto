@@ -1,0 +1,17 @@
+syntax = "proto3";
+package dummy.pkg4;
+option go_package = "code.justin.tv/safety/gateway/testserver/rpc/testserver/gen/dummy.pkg4";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/duration.proto";
+
+import "dummy/pkg1/const.proto";
+import "dummy/pkg2/nest/const.proto";
+
+message D {
+    dummy.pkg2.nest.Country Country = 1;
+    dummy.pkg1.A A = 2;
+    google.protobuf.Timestamp CreatedAt = 3;
+}
+
